@@ -12,9 +12,12 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res, next) => {
   try {
-    
+    const fruit = await Fruit.getBy(req.params.id)
+    res.json(fruit)
+  } catch (err) {
+    next(err)
   }
   const { id } = req.params;
 });
