@@ -6,6 +6,3 @@ const configs = require('../knexfile')
 const env = process.env.NODE_ENV || 'development'
 // GIMME A DATABASE CONNECTION ALREADY!
 module.exports = knex(configs[env])
-
-
-db('books').where(id, 4)
