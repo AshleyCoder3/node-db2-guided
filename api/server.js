@@ -10,4 +10,6 @@ server.use(express.json());
 
 server.use('/api/fruits', fruitsRouter);
 
+server.use()
+
 module.exports = server;
