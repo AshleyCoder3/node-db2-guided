@@ -5,5 +5,7 @@ exports.up = async function(knex) {
 }
 
 exports.down = async function(knex) {
-  await knex.schema.dropTableIfExists('fruits')
+  await knex.schema.table('fruits', table => {
+    table.dropColumn('color')
+  })
 };
