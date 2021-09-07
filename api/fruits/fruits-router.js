@@ -1,5 +1,5 @@
 const express = require('express');
-
+const Fruit = require('./fruits-model')
 const db = require('../../data/db-config')
 
 const router = express.Router();
