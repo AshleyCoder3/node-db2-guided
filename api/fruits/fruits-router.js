@@ -23,7 +23,8 @@ router.get('/:id', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   try {
-    const inserted = await Fruit.
+    const inserted = await Fruit.postNew(req.body)
+    res.status(201).json(inserted)
   } catch (err) {
     next(err)
   }
