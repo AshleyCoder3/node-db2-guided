@@ -3,14 +3,12 @@ const Fruit = require('./fruits-model');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  db('fruits')
-    .then(fruits => {
-      res.json(fruits);
-    })
-    .catch(err => {
-      res.status(500).json({ message: 'Failed to retrieve fruits' });
-    });
+router.get('/', async (req, res, next) => {
+  try {
+    
+  } catch (err) {
+    next(err)
+  }
 });
 
 router.get('/:id', (req, res) => {
