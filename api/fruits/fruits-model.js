@@ -13,7 +13,8 @@ async function getBy(id) {
 async function postNew(fruit) {
   // insert into fruits (name, avgWeightOz)
   // values ('mellon', 20);
-  const ids = await db('fruits').insert([fruit1, fruit2])
+  const [id] = await db('fruits').insert(fruit)
+  return getBy(id)
 }
 
 module.exports = {
