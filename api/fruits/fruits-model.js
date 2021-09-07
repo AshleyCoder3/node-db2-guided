@@ -7,10 +7,11 @@ async function getAll() {
 
 async function getBy(id) {
   // select * from fruits where id = 7;
-  return db('fruits').where('id', id)
+  return db('fruits').where('id', id).first()
 }
 
 async function postNew(fruit) {
+  // insert into fruits 
   return 'postNew'
 }
 
