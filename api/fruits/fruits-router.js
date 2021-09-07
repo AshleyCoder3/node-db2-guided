@@ -21,8 +21,12 @@ router.get('/:id', async (req, res, next) => {
   }
 });
 
-router.post('/', (req, res) => {
-    
+router.post('/', async (req, res, next) => {
+  try {
+    const inserted = await Fruit.
+  } catch (err) {
+    next(err)
+  }
 });
 
 module.exports = router;
