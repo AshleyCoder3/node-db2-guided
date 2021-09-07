@@ -5,7 +5,8 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    
+    const all = await Fruit.getAll()
+    res.json(all)
   } catch (err) {
     next(err)
   }
