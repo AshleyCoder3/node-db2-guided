@@ -2,7 +2,7 @@ module.exports = {
   development: { // db for dev
     client: 'sqlite3',
     connection: {
-      filename: './data/produce.db3'
+      filename: './data/produce.db3',
     },
     useNullAsDefault: true,
   },
@@ -10,6 +10,6 @@ module.exports = {
     // etc
   },
   testing: {
-
+    // etc
   }
 }
