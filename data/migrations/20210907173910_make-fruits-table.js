@@ -3,6 +3,6 @@ exports.up = async function(knex) {
   await knex.schema.createTable('fruits', table => {})
 }
 
-exports.down = function(knex) {
+exports.down = afunction(knex) {
 
 };
