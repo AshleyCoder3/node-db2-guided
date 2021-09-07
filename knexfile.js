@@ -5,6 +5,9 @@ module.exports = {
       filename: './data/produce.db3',
     },
     useNullAsDefault: true,
+    migrations: {
+      directory: './data/migrations'
+    }
   },
   production: {
     // etc
