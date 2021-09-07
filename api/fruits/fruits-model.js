@@ -2,11 +2,12 @@ const db = require('../../data/db-config')
 
 async function getAll() {
   // select * from fruits;
-  return db('fruits').select('name', 'ave')
+  return db('fruits')
 }
 
 async function getBy(id) {
-  return 'getBy'
+  // select * from fruits where id = 7;
+  return db('fruits').where('id', id)
 }
 
 async function postNew(fruit) {
