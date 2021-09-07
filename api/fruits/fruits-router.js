@@ -13,15 +13,10 @@ router.get('/', async (req, res, next) => {
 });
 
 router.get('/:id', (req, res) => {
+  try {
+    
+  }
   const { id } = req.params;
-
-  db('fruits').where({ id }).first()
-    .then(fruit => {
-      res.json(fruit);
-    })
-    .catch(err => {
-      res.status(500).json({ message: 'Failed to retrieve fruit' });
-    });
 });
 
 router.post('/', (req, res) => {
