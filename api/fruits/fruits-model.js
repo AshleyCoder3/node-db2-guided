@@ -1,3 +1,5 @@
+const db = require('../../')
+
 async function getAll() {
   return 'getAll'
 }
