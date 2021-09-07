@@ -5,7 +5,7 @@ function getAll() {
   return db('fruits')
 }
 
-function getBy(id) {
+async function getBy(id) {
   // select * from fruits where id = 7;
   return db('fruits').where('id', id).first()
 }
