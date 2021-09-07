@@ -7,7 +7,8 @@ function getAll() {
 
 async function getBy(id) {
   // select * from fruits where id = 7;
-  return db('fruits').where('id', id).first()
+  const result = await db('fruits').where('id', id).first()
+  return result
 }
 
 async function postNew(fruit) {
