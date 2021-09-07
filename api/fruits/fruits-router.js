@@ -19,7 +19,6 @@ router.get('/:id', async (req, res, next) => {
   } catch (err) {
     next(err)
   }
-  const { id } = req.params;
 });
 
 router.post('/', (req, res) => {
