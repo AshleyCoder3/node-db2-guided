@@ -13,7 +13,7 @@ async function getBy(id) {
 async function postNew(fruit) {
   // insert into fruits (name, avgWeightOz)
   // values ('mellon', 20);
-  return 'postNew'
+  
 }
 
 module.exports = {
