@@ -1,7 +1,8 @@
 const db = require('../../data/db-config')
 
 async function getAll() {
-  return db
+  // select * from fruits;
+  return db('fruits').select('name', 'ave')
 }
 
 async function getBy(id) {
