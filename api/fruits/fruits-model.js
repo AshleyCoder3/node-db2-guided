@@ -1,7 +1,7 @@
-const db = require('../../')
+const db = require('../../data/db-config')
 
 async function getAll() {
-  return 'getAll'
+  return db
 }
 
 async function getBy(id) {
